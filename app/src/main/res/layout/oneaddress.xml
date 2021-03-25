@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/one_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="30dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/border1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/address_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择收货地址"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/address_nameandtel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text=""
+            android:gravity="bottom"
+            android:textSize="13dp"
+            android:textColor="@color/darkgrey"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/address_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edit"
+            android:gravity="bottom"
+            android:textSize="18dp"
+            android:textColor="@color/red"
+            android:layout_marginRight="20dp"/>
+
+</LinearLayout>

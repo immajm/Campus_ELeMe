@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/chooseaddress_t"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/chooseaddress_toolbar"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            app:titleTextColor="@color/white"
+            app:title=""
+
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout
+            android:id="@+id/chooseaddress_relative"
+            app:layout_constraintTop_toBottomOf="@id/chooseaddress_t"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:descendantFocusability="blocksDescendants"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/choose_address_recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="580dp" />
+        </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/choose_address_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="@color/blue"
+        app:srcCompat="@drawable/add1"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/chooseaddress_relative"
+        app:layout_constraintRight_toRightOf="parent"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

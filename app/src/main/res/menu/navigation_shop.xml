@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/allgoods"
+        android:icon="@drawable/all_goods"
+        android:title="所有商品" />
+
+    <item
+        android:id="@+id/comment"
+        android:icon="@drawable/comment"
+        android:title="评论" />
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/shopping_cart"
+        android:title="购物车" />
+    <item
+        android:id="@+id/shoptickets"
+        android:icon="@drawable/ticket"
+        android:title="优惠券" />
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eleme">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.eleme.wjl.GoodsListActivity">
+        </activity>
+        <activity android:name="com.example.eleme.MainPage">
+        </activity>
+        <activity android:name="com.example.eleme.ShowMsgActivity">
+        </activity>
+        <activity android:name="com.example.eleme.MyMsgActivity">
+        </activity>
+        <activity android:name="com.example.eleme.BuyActivity">
+        </activity>
+        <activity android:name="com.example.eleme.CommentActivity">
+        </activity>
+        <activity android:name="com.example.eleme.ShopActivity">
+        </activity>
+        <activity android:name="com.example.eleme.ChooseAddressActivity">
+        </activity>
+        <activity android:name="com.example.eleme.EditAddressActivity"></activity>
+        <activity android:name="com.example.eleme.BuyEndActivity"></activity>
+
+        <activity android:name=".HomeFragment1.Coordinary.Coordinary1"/>
+            <activity android:name="com.example.eleme.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.eleme.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.GoodsFragment">
+
+    <RelativeLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:descendantFocusability="blocksDescendants"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/class_recycleView"
+            android:layout_width="95dp"
+            android:layout_height="450dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/goods_recycleView"
+            android:layout_width="320dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="450dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

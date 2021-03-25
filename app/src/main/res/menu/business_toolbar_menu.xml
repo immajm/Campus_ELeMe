@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+    <item
+            android:id="@+id/back"
+            android:icon="@drawable/fanhui"
+            app:showAsAction="always"
+            android:title="" />
+    <item
+            android:id="@+id/search"
+            android:icon="@drawable/sousuo"
+            app:showAsAction="always"
+            android:title="" />
+    <item
+            android:id="@+id/collect"
+            android:icon="@drawable/shoucang"
+            app:showAsAction="collapseActionView"
+            android:title=""
+            />
+
+</menu>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/comment_t"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/comment_toolbar"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            app:titleTextColor="@color/white"
+            app:title="订单评价"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_buy"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        app:layout_constraintTop_toBottomOf="@id/comment_t"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/border4"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="评价商家"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+            <RatingBar
+                android:id="@+id/ratingbar_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1" />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_comment"
+                android:layout_width="match_parent"
+                android:layout_height="85dp">
+            </EditText>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:textColor="@color/blue"
+                android:text="评价20字以上有惊喜，还有机会赢￥1红包"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/border4"
+            android:layout_gravity="center_vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="评价骑手"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="已对骑手匿名"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <RatingBar
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/ratingbar_ridercomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1" />
+<!--            <RadioGroup-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="350dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/RadioGroup_type"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/edit3"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent">-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/comment_good"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:checked="true"-->
+<!--                    android:onClick="onRadioButtonClicked"-->
+<!--                    android:text="好评" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/comment_bad"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:onClick="onRadioButtonClicked"-->
+<!--                    android:text="差评" />-->
+<!--            </RadioGroup>-->
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/comment_btn_comment"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="提交评价"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:background="@drawable/button_add"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

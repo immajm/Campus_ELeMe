@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Takeaway1</string>
+    <string name="vip_name">品牌会员卡</string>
+    <string name="business_card_name">本店卡券</string>
+    <string name="collect_name">收藏</string>
+    <string name="business_string_name">串意十足烧烤店(新天地店)</string>
+    <string name="business_detail_name">蜂鸟配送约56分钟 . 月售6358 . 食无忧</string>
+    <string name="bulletin_name">公告:   (酒水价格大于烧烤价格一律不送)   (正规渠道,真的好)</string>
+    <string name="bulletin_con">公告:   (酒水价格大于烧烤价格一律不送)   (正规渠道,真材实料,不用假牛羊肉骗人!!
+    小店实付100以上开发票,请备注留邮箱,开票隔天开或者发快递,有问题请及时联系)</string>
+    <string name="coupon_name">$8 无门槛 领</string>
+    <string name="reduce_name">38减20 58减30 88减40 128减50 </string>
+    <string name="order_name">点餐</string>
+    <string name="comment_name">评价</string>
+    <string name="story_name">商家</string>
+    <string name="money_name">￥</string>
+    <string name="title_activity_goods_detail">GoodsDetailActivity</string>
+</resources>

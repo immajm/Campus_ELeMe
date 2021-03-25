@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="main_menu_animStyle">
+<item name="android:windowEnterAnimation">@anim/content_bottom_in</item>
+<item name="android:windowExitAnimation">@anim/content_bottom_out</item>
+</style>
+    </resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+   <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="18dp"
+           android:paddingBottom="18dp"
+       >
+       <TextView
+               android:id="@+id/chosen"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#000"
+               android:text="已选商品"
+           />
+       <ImageView
+
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_toLeftOf="@+id/btn_clear"
+               android:layout_marginRight="5dp"
+               android:src="@drawable/qingkong"
+               />
+       <TextView
+               android:id="@+id/btn_clear"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:text="清空"
+               />
+   </RelativeLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/cart_content_recycler"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+       />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+        >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="包装费"
+            />
+        <TextView
+               android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/themeorange"
+                android:textSize="10sp"
+                android:text="@string/money_name"
+            />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/themeorange"
+                android:text="1.7"
+                />
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0" />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/white" />
+</LinearLayout>

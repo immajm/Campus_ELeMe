@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_shop_cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/shop_cart_btn_buy"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:text="去结算"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:background="@drawable/button_add"
+        android:layout_marginRight="10dp"
+        android:textColor="#fff"
+        />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_shop_cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:descendantFocusability="blocksDescendants"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/get_ticket_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+    </RelativeLayout>
+</LinearLayout>
